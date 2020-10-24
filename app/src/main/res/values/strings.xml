@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Digicon Valley</string>
+    <string-array name="age_group">
+        <item>Select Age!</item>
+        <item>Child</item>
+        <item>Young</item>
+        <item>Adult</item>
+    </string-array>
+</resources>

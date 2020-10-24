@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:padding="10dp"
+    android:gravity="center"
+    android:layout_marginTop="50dp"
+    android:orientation="vertical"
+    tools:context=".WeightSum">
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="THANK YOU"
+        android:textSize="35dp"
+        android:textColor="#4CAF50"
+        />
+    <TextView
+        android:layout_weight="1"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="Your Order Has Been Place Successfully"
+        android:textSize="24dp"
+        />
+    <TextView
+        android:layout_weight="1"
+        android:textColor="#000000"
+        android:textSize="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="Order number : #ord-693"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:src="@drawable/newimg" />
+    <TextView
+        android:layout_weight="1"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="Dhoobi Will See You At"
+        android:textSize="24dp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_weight="1"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="7/2/2019"
+        android:textSize="24dp"
+        />
+    <TextView
+        android:layout_weight="1"
+        android:textColor="#000000"
+        android:textSize="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="05 pm - 09 pm"
+        />
+    <Button
+        android:layout_marginTop="50dp"
+        android:layout_weight="1"
+        android:textSize="18dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/weightsum"
+        android:text="GO TO MAIN"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        />
+</LinearLayout>

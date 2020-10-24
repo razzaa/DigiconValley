@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:weightSum="100"
+        android:id="@+id/mainlyt"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <LinearLayout
+            android:layout_weight="95"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="359dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginRight="127dp"
+                android:gravity="center"
+                android:text="Home Energy Management System"
+                android:textColor="#15232C"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_marginTop="14dp"
+                android:background="#15232C"
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="29dp"
+                    android:text="Building Level Simulator"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+
+                    />
+            </LinearLayout>
+
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="true"
+                android:fillViewport="true"
+                android:orientation="vertical"
+                android:padding="18dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/lyt1"
+                        android:layout_width="152dp"
+                        android:layout_height="52dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/linear_right_bottom"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30.69dp"
+                            android:layout_height="30.70dp"
+                            android:layout_marginLeft="16.87dp"
+                            android:layout_marginTop="11dp"
+                            android:layout_marginBottom="10.84dp"
+                            android:src="@drawable/img1" />
+
+                        <TextView
+                            android:layout_width="56dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="16.87dp"
+                            android:layout_marginTop="11dp"
+                            android:layout_marginBottom="10.84dp"
+                            android:text="Utility Grid"
+                            android:textColor="#15232C"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lyt2"
+                        android:layout_width="152dp"
+                        android:layout_height="52dp"
+
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/linear_left_bottom"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30.69dp"
+                            android:layout_height="30.70dp"
+                            android:layout_marginLeft="16.87dp"
+                            android:layout_marginTop="11dp"
+                            android:layout_marginBottom="10.84dp"
+                            android:src="@drawable/img2" />
+
+                        <TextView
+                            android:layout_width="56dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="16.87dp"
+                            android:layout_marginTop="11dp"
+                            android:layout_marginBottom="10.84dp"
+                            android:text="Solar PV"
+                            android:textColor="#15232C"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lyt3"
+                        android:layout_width="152dp"
+                        android:layout_height="52dp"
+                        android:layout_below="@+id/lyt1"
+
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/linear_right"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="30.69dp"
+                            android:layout_height="30.70dp"
+                            android:layout_marginLeft="16.87dp"
+                            android:layout_marginTop="11dp"
+                            android:layout_marginBottom="10.84dp"
+                            android:src="@drawable/img3" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="16.87dp"
+                            android:layout_marginTop="11dp"
+                            android:layout_marginBottom="10.84dp"
+                            android:text="Smart Meter"
+                            android:textColor="#15232C"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lyt4"
+                        android:layout_width="152dp"
+                        android:layout_height="52dp"
+                        android:layout_below="@+id/lyt2"
+
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/linear_left"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="30.69dp"
+                            android:layout_height="30.70dp"
+                            android:layout_marginLeft="16.87dp"
+                            android:layout_marginTop="11dp"
+                            android:layout_marginBottom="10.84dp"
+                            android:src="@drawable/img4" />
+
+                        <TextView
+                            android:layout_width="71dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="16.87dp"
+                            android:layout_marginTop="11dp"
+                            android:layout_marginBottom="10.84dp"
+                            android:text="Smart Appliances"
+                            android:textColor="#15232C"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lyt5"
+                        android:layout_width="152dp"
+                        android:layout_height="52dp"
+                        android:layout_below="@+id/lyt3"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/linear_right_bottom"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="30.69dp"
+                            android:layout_height="30.70dp"
+                            android:layout_marginLeft="16.87dp"
+                            android:layout_marginTop="11dp"
+                            android:layout_marginBottom="10.84dp"
+                            android:src="@drawable/ic_group_591" />
+
+                        <TextView
+                            android:layout_width="56dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="16.87dp"
+                            android:layout_marginTop="11dp"
+                            android:layout_marginBottom="10.84dp"
+                            android:text="CCHP"
+                            android:textColor="#15232C"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lyt6"
+                        android:layout_width="152dp"
+                        android:layout_height="52dp"
+                        android:layout_below="@+id/lyt4"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/linear_left_bottom"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30.69dp"
+                            android:layout_height="30.70dp"
+                            android:layout_marginLeft="16.87dp"
+                            android:layout_marginTop="11dp"
+                            android:layout_marginBottom="10.84dp"
+                            android:src="@drawable/ic_path_3929" />
+
+                        <TextView
+                            android:layout_width="56dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="16.87dp"
+                            android:layout_marginTop="11dp"
+                            android:layout_marginBottom="10.84dp"
+                            android:text="HESS"
+                            android:textColor="#15232C"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lyt7"
+                        android:layout_width="152dp"
+                        android:layout_height="52dp"
+                        android:layout_below="@+id/lyt5"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/linear_right"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="30.69dp"
+                            android:layout_height="30.70dp"
+                            android:layout_marginLeft="16.87dp"
+                            android:layout_marginTop="11dp"
+                            android:layout_marginBottom="10.84dp"
+                            android:src="@drawable/ic_path_3930" />
+
+                        <TextView
+                            android:layout_width="69dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="16.87dp"
+                            android:layout_marginTop="11dp"
+                            android:layout_marginBottom="10.84dp"
+                            android:text="    NG"
+                            android:textColor="#15232C"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lyt8"
+                        android:layout_width="152dp"
+                        android:layout_height="52dp"
+                        android:layout_below="@+id/lyt6"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/linear_left"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30.69dp"
+                            android:layout_height="30.70dp"
+                            android:layout_marginLeft="16.87dp"
+                            android:layout_marginTop="11dp"
+                            android:layout_marginBottom="10.84dp"
+                            android:src="@drawable/ic_path_3930" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="16.87dp"
+                            android:layout_marginTop="11dp"
+                            android:layout_marginBottom="10.84dp"
+                            android:text="Flexible Thermal Load"
+                            android:textColor="#15232C"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/lyt9"
+                        android:layout_width="152dp"
+                        android:layout_height="52dp"
+                        android:layout_below="@+id/lyt7"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/linear_right_bottom"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="30.69dp"
+                            android:layout_height="30.70dp"
+                            android:layout_marginLeft="16.87dp"
+                            android:layout_marginTop="11dp"
+                            android:layout_marginBottom="10.84dp"
+                            android:src="@drawable/ic_path_3932" />
+
+                        <TextView
+                            android:layout_width="77dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="16.87dp"
+                            android:layout_marginTop="11dp"
+                            android:layout_marginBottom="10.84dp"
+                            android:text="Curtailable Load"
+                            android:textColor="#15232C"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lyt10"
+                        android:layout_width="152dp"
+                        android:layout_height="52dp"
+                        android:layout_below="@+id/lyt8"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/linear_left_bottom"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30.69dp"
+                            android:layout_height="30.70dp"
+                            android:layout_marginLeft="16.87dp"
+                            android:layout_marginTop="11dp"
+                            android:layout_marginBottom="10.84dp"
+                            android:src="@drawable/ic_group_592" />
+
+                        <TextView
+                            android:layout_width="72dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="16.87dp"
+                            android:layout_marginTop="11dp"
+                            android:layout_marginBottom="10.84dp"
+                            android:text="PHEV"
+                            android:textColor="#15232C"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lyt11"
+                        android:layout_width="152dp"
+                        android:layout_height="52dp"
+                        android:layout_below="@+id/lyt9"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/linear_right"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="30.69dp"
+                            android:layout_height="30.70dp"
+                            android:layout_marginLeft="16.87dp"
+                            android:layout_marginTop="11dp"
+                            android:layout_marginBottom="10.84dp"
+                            android:src="@drawable/ic_path_3935" />
+
+                        <TextView
+                            android:layout_width="56dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="16.87dp"
+                            android:layout_marginTop="11dp"
+                            android:layout_marginBottom="10.84dp"
+                            android:text="EC"
+                            android:textColor="#15232C"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lyt12"
+                        android:layout_width="152dp"
+                        android:layout_height="52dp"
+                        android:layout_below="@+id/lyt10"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/linear_left"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+                            android:layout_width="30.69dp"
+                            android:layout_height="30.70dp"
+                            android:layout_marginLeft="16.87dp"
+                            android:layout_marginTop="11dp"
+                            android:layout_marginBottom="10.84dp"
+                            android:src="@drawable/ic_path_3936" />
+
+                        <TextView
+                            android:layout_width="56dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="16.87dp"
+                            android:layout_marginTop="11dp"
+                            android:layout_marginBottom="10.84dp"
+                            android:text="TES"
+                            android:textColor="#15232C"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </ScrollView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:weightSum="100"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:gravity="center"
+
+                android:layout_marginLeft="20dp"
+                android:layout_weight="25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="19dp"
+                    android:src="@drawable/ic_icon" />
+
+                <TextView
+                    android:textColor="#000000"
+                    android:id="@+id/hometxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+
+                android:layout_weight="25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="19dp"
+                    android:src="@drawable/ic_union_1"  />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Services" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+
+                android:layout_weight="25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="19dp"
+                    android:src="@drawable/ic_path_484"   />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Appointment" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="19dp"
+                    android:src="@drawable/ic_path_487"     />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vlog" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+
+                android:layout_marginEnd="20dp"
+                android:layout_weight="25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="20dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="19dp"
+                    android:src="@drawable/ic_path_486"    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Community" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <!--        Yelow Button Start-->
+    <LinearLayout
+        android:id="@+id/helpline"
+        android:gravity="center"
+        android:layout_marginRight="34dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/helpline"
+        android:layout_width="116dp"
+        android:layout_height="37dp">
+        <ImageView
+            android:src="@drawable/ic_path_3651"
+            android:layout_width="20.69dp"
+            android:layout_height="20.69dp"/>
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000000"
+            android:text="HELPLINE"
+            android:layout_width="65dp"
+            android:layout_height="17dp"/>
+    </LinearLayout>
+    <!--        Yellow Button End-->
+</RelativeLayout>

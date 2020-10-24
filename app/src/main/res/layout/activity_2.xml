@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity2">
+
+
+    <TextView
+        android:layout_marginLeft="16dp"
+        android:id="@+id/heading"
+        android:padding="8dp"
+        android:textSize="24dp"
+        android:textColor="#2196F3"
+        android:text="Vitals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+    <View
+        android:id="@+id/view"
+        android:layout_below="@+id/heading"
+        android:background="#03A9F4"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        />
+    <CheckBox
+        android:layout_below="@+id/view"
+        android:id="@+id/high_blood_pressure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="High Blood Pressure" />
+
+    <CheckBox
+
+        android:id="@+id/diabets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/high_blood_pressure"
+        android:text="Diabetes" />
+
+    <TextView
+        android:padding="16dp"
+        android:textSize="16dp"
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/diabets"
+        android:text="Allergies:" />
+
+    <EditText
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt"
+        android:layout_marginLeft="16dp"
+        />
+
+    <Button
+        android:layout_margin="16dp"
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:text="Back" />
+
+    <Button
+        android:layout_margin="16dp"
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="Submit" />
+</RelativeLayout>
